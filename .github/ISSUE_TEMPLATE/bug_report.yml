@@ -9,17 +9,19 @@ body:
     value: >
       在提交您遇到的 bug 之前, 请在 [这里](https://github.com/wangyuxinwhy/uniem/issues?q=) 看看有没有人类似的问题~ 🌝
 - type: textarea
+  id: description
   attributes:
-    id: description
     label: 🐛 描述您遇到的 bug
   validations:
     required: true
 - type: dropdown
-  label: Python Version
-  options:
-    - 3.10
-    - 3.11
-    - other
+  id: python-version
+  attributes:
+    label: Python Version
+    options:
+      - 3.10
+      - 3.11
+      - other
 - type: markdown
   attributes:
     value: >
